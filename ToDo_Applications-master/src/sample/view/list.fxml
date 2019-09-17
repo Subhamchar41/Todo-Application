@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+   <children>
+      <Label alignment="CENTER" layoutY="-3.0" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #007ac1;" text="TODO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow radius="18.155" width="53.62" />
+         </effect>
+      </Label>
+      <JFXListView fx:id="listTask" layoutX="260.0" layoutY="61.0" prefHeight="332.0" prefWidth="337.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <AnchorPane layoutY="61.0" prefHeight="332.0" prefWidth="254.0">
+         <children>
+            <JFXTextField fx:id="titleText" alignment="CENTER" layoutX="20.0" layoutY="37.0" prefHeight="39.0" prefWidth="219.0" promptText="Title">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="descriptionTextField" layoutX="14.0" layoutY="110.0" prefHeight="81.0" prefWidth="227.0" promptText="Description">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="buttonTextField" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="47.0" layoutY="231.0" prefHeight="39.0" prefWidth="160.0" style="-fx-background-color: #67daff;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="refreashButton" fitHeight="23.0" fitWidth="30.0" layoutX="563.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-update-left-rotation-24.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="517.0" layoutY="16.0" text="Refrash">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

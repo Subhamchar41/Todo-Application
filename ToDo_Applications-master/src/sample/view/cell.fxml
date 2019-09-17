@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="100.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="-4.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-tasks-30.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titleLabel" layoutX="37.0" layoutY="2.0" prefHeight="25.0" prefWidth="187.0" style="-fx-background-color: #aeaeae; -fx-background-radius: 10; -fx-label-padding: 5;" text="Title" wrapText="true" />
+      <Label fx:id="descriptionLabel" layoutX="37.0" layoutY="39.0" prefHeight="37.0" prefWidth="244.0" style="-fx-background-color: #aeaeae; -fx-background-radius: 10; -fx-padding: 10;" text="Description" wrapText="true" />
+      <ImageView fx:id="deleteButton" fitHeight="19.0" fitWidth="25.0" layoutX="267.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-delete-bin-24.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="timeDetect" alignment="TOP_RIGHT" layoutX="78.0" layoutY="78.0" prefHeight="17.0" prefWidth="203.0" text="Time" textFill="#d34949">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="updateDetails" fitHeight="17.0" fitWidth="51.0" layoutX="242.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-update-left-rotation-24.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

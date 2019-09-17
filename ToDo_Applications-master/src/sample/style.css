@@ -1,0 +1,9 @@
+.loginBackground{
+    -fx-background-image: url("../sample/assets/4611-dark-orange-blur-background.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+.text-field{
+    -fx-prompt-text-fill: bisque;
+    -fx-text-fill: white;
+}

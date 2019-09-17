@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="loginBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="loginBackground" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane blendMode="DARKEN" layoutX="126.0" layoutY="37.0" prefHeight="512.0" prefWidth="561.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="21.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_account_circle_black_24dp.png" />
+               </image>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" spread="1.0" width="0.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="21.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_lock_black_24dp.png" />
+               </image>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" spread="1.0" width="0.0" />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="loginButton" alignment="CENTER" defaultButton="true" layoutX="163.0" layoutY="423.0" prefHeight="46.0" prefWidth="206.0" ripplerFill="#bc1a1a" style="-fx-background-color: #870000;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-0.43" contrast="1.0" hue="-0.02" saturation="1.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="loginRegister" layoutX="462.0" layoutY="439.0" prefHeight="30.0" prefWidth="85.0" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <ColorAdjust brightness="-0.07" saturation="-0.55" />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="74.0" fitWidth="88.0" layoutX="363.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-edit-profile-160.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="346.0" layoutY="116.0" opacity="0.83" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+         <effect>
+            <DropShadow height="41.76" radius="73.69" spread="0.41" width="255.0" />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="loginUsername" focusColor="#5d7ee1" layoutX="199.0" layoutY="288.0" prefHeight="31.0" prefWidth="426.0" promptText="Username" styleClass="text-field" stylesheets="@../style.css" unFocusColor="#978a77">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="loginPassword" focusColor="#5d7ee1" layoutX="205.0" layoutY="371.0" prefHeight="31.0" prefWidth="426.0" promptText="Password" unFocusColor="#978a77">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

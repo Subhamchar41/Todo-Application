@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorView" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AppDetails">
+   <children>
+      <Label fx:id="appdetailsLabel" alignment="CENTER" layoutX="246.0" layoutY="233.0" text="No Tasks For Today" textAlignment="CENTER" textFill="#867f7f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="97.0" prefWidth="700.0" style="-fx-background-color: #c43e00;">
+         <children>
+            <Label alignment="CENTER" layoutX="299.0" layoutY="22.0" text="TODO" textAlignment="CENTER" textFill="#ffeeee">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fx:id="addButton" fitHeight="53.0" fitWidth="55.0" layoutX="324.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_black_24dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

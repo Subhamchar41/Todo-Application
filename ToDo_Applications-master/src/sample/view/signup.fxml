@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchor" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffcf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignupController">
+   <children>
+      <AnchorPane layoutY="35.0" prefHeight="76.0" prefWidth="800.0" style="-fx-background-color: #bf360c;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="365.0" layoutY="38.0" opacity="0.89" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="69.0" prefWidth="800.0" style="-fx-background-color: #870000;">
+         <children>
+            <Label layoutX="355.0" layoutY="11.0" text="TODO" textFill="#e8e8e8">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="signupFirstName" focusColor="#f88724" layoutX="228.0" layoutY="173.0" prefHeight="36.0" prefWidth="398.0" promptText="First Name" unFocusColor="#797979" />
+      <JFXPasswordField fx:id="signupPassword" focusColor="#f88724" layoutX="228.0" layoutY="328.0" prefHeight="36.0" prefWidth="398.0" promptText="Password" unFocusColor="#797979" />
+      <JFXTextField fx:id="signupLastName" focusColor="#f88724" layoutX="229.0" layoutY="227.0" prefHeight="36.0" prefWidth="398.0" promptText="Last Name" unFocusColor="#797979" />
+      <JFXTextField fx:id="signupUserName" focusColor="#f88724" layoutX="228.0" layoutY="279.0" prefHeight="36.0" prefWidth="398.0" promptText="Username" unFocusColor="#797979" />
+      <ImageView fitHeight="22.0" fitWidth="30.0" layoutX="174.0" layoutY="183.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_account_circle_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="30.0" layoutX="174.0" layoutY="338.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_lock_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="30.0" layoutX="174.0" layoutY="289.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-edit-profile-240.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="signupButton" layoutX="321.0" layoutY="485.0" prefHeight="47.0" prefWidth="213.0" style="-fx-background-color: #bf360c;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="signupLocation" focusColor="#f88724" layoutX="228.0" layoutY="383.0" prefHeight="36.0" prefWidth="398.0" promptText="Location" unFocusColor="#797979" />
+      <ImageView fitHeight="22.0" fitWidth="30.0" layoutX="174.0" layoutY="393.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-taxi-location-24.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="signupMaleCheckBox" layoutX="321.0" layoutY="438.0" mnemonicParsing="false" selected="true" text="Male">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="signupFemaleCheckBox" layoutX="472.0" layoutY="438.0" mnemonicParsing="false" text="Female" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
